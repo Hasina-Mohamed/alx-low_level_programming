@@ -9,10 +9,11 @@
 int main(void)
 {
 	int m = '0';
-	int l = '1';
+	int l;
 
 	while (m <= '9')
 	{
+		l = m + 1;
 		while (l <= '9')
 		{
 			if (!(m > l) || m == l)
@@ -29,7 +30,6 @@ int main(void)
 			}
 			l++;
 		}
-		l = '0';
 		m++;
 	}
 	return (0);
